@@ -1,20 +1,21 @@
 [gd_scene format=3 uid="uid://ddvwox3clocxn"]
 
-[ext_resource type="Script" uid="uid://bgxqfiddobet2" path="res://mainScene.gd" id="1_epypp"]
-[ext_resource type="Texture2D" uid="uid://0pnn6clid3vf" path="res://resources/tab.png" id="2_0hol4"]
-[ext_resource type="Script" uid="uid://ehxofmdnxl1b" path="res://sprite_2d.gd" id="3_0hol4"]
-[ext_resource type="Script" uid="uid://diiex01pdpx3c" path="res://closeTab.gd" id="4_0hol4"]
+[ext_resource type="Script" uid="uid://bgxqfiddobet2" path="res://scripts/mainScene.gd" id="1_4vge2"]
+[ext_resource type="Texture2D" uid="uid://0pnn6clid3vf" path="res://resources/tab.png" id="2_04qyp"]
+[ext_resource type="Script" uid="uid://ehxofmdnxl1b" path="res://scripts/sprite_2d.gd" id="3_j7wrs"]
+[ext_resource type="Script" uid="uid://diiex01pdpx3c" path="res://scripts/closeTab.gd" id="4_fws66"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sutyw"]
 radius = 6.0
 
 [node name="Node2D" type="Node2D" unique_id=950236339]
-script = ExtResource("1_epypp")
+script = ExtResource("1_4vge2")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1291179652]
+position = Vector2(113, 34)
 scale = Vector2(2, 2)
-texture = ExtResource("2_0hol4")
-script = ExtResource("3_0hol4")
+texture = ExtResource("2_04qyp")
+script = ExtResource("3_j7wrs")
 
 [node name="Area2D" type="Area2D" parent="Sprite2D" unique_id=1241091130]
 position = Vector2(-20.5, -1.5)
@@ -22,4 +23,4 @@ position = Vector2(-20.5, -1.5)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D" unique_id=1034258096]
 position = Vector2(44, 1.5)
 shape = SubResource("CircleShape2D_sutyw")
-script = ExtResource("4_0hol4")
+script = ExtResource("4_fws66")
