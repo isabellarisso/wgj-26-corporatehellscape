@@ -1,0 +1,47 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/minigame_tic_tac_toe.gd" id="1_script"]
+
+[node name="MinigameTicTacToe" type="Control"]
+custom_minimum_size = Vector2(320, 240)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+
+[node name="Layout" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 6.0
+offset_right = -8.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 4
+
+[node name="Status" type="Label" parent="Layout"]
+custom_minimum_size = Vector2(0, 42)
+layout_mode = 2
+text = "Tú eres X. Elige una casilla."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Board" type="GridContainer" parent="Layout"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+columns = 3
+theme_override_constants/h_separation = 4
+theme_override_constants/v_separation = 4
+
+[node name="Retry" type="Button" parent="Layout"]
+visible = false
+layout_mode = 2
+text = "Volver a intentar"

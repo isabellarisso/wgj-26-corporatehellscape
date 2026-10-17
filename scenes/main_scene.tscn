@@ -5,6 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://6ip1tvldcynb" path="res://resources/memphisbackground.png" id="3_background"]
 [ext_resource type="Texture2D" uid="uid://bcincwe3t5t80" path="res://resources/tab atlas.png" id="4_gubc5"]
 [ext_resource type="PackedScene" uid="uid://waylvfl2synd" path="res://scenes/progress_bar.tscn" id="4_progress_bar"]
+[ext_resource type="PackedScene" path="res://scenes/minigame_number_guessing.tscn" id="minigame_number_guessing"]
+[ext_resource type="PackedScene" path="res://scenes/minigame_tic_tac_toe.tscn" id="minigame_tic_tac_toe"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rt2n2"]
 texture = ExtResource("4_gubc5")
@@ -28,7 +30,7 @@ sources/0 = SubResource("TileSetAtlasSource_rt2n2")
 
 [node name="Node2D" type="Node2D" unique_id=950236339]
 script = ExtResource("1_w2twt")
-minigame_scenes = Array[PackedScene]([ExtResource("2_minigame")])
+minigame_scenes = Array[PackedScene]([ExtResource("2_minigame"), ExtResource("minigame_number_guessing"), ExtResource("minigame_tic_tac_toe")])
 
 [node name="TilemapLayer" type="Node2D" parent="." unique_id=544590193]
 
