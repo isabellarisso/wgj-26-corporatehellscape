@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://waylvfl2synd"]
+
+[ext_resource type="Script" uid="uid://dfuo32nec14b0" path="res://scripts/progress_bar.gd" id="1_vt3ux"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v5s5d"]
+bg_color = Color(0.29411766, 0.29411766, 0.29411766, 0.5882353)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_chwcf"]
+bg_color = Color(0.42745098, 1, 0.27450982, 1)
+
+[node name="ProgressBar" type="ProgressBar" unique_id=184838498]
+offset_left = 272.0
+offset_top = 538.0
+offset_right = 852.0
+offset_bottom = 568.0
+theme_override_styles/background = SubResource("StyleBoxFlat_v5s5d")
+theme_override_styles/fill = SubResource("StyleBoxFlat_chwcf")
+value = 50.0
+show_percentage = false
+script = ExtResource("1_vt3ux")
+
+[node name="Button" type="Button" parent="." unique_id=409209508]
+layout_mode = 0
+offset_left = 285.0
+offset_top = -154.0
+offset_right = 346.0
+offset_bottom = -98.0
+text = "+"
+autowrap_trim_flags = 0
