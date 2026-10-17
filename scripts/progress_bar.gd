@@ -6,7 +6,7 @@ extends ProgressBar
 var current_chauchas : int = 0
 var goal_chauchas : int = 1000
 
-@export var chauchas_text : Label
+@onready var chauchas_text: Label = $ChauchasText
 
 func _ready() -> void:
 	# initializar progress bar limites
@@ -36,8 +36,8 @@ func increase_money(amount:int):
 	
 func update_chauchas_text() -> void:
 	if chauchas_text:
-		chauchas_text.text = "Chauchas: " + str(current_chauchas)
+		chauchas_text.text = "Chauchas: %d / %d" % [current_chauchas, goal_chauchas]
 
 
 func on_money_complete() -> void:
-	print("El ahorro de chauchas ha sido exitoso!")
+	chauchas_text.text = "El ahorro de chauchas ha sido exitoso!"

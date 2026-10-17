@@ -22,3 +22,7 @@ offset_bottom = 656.0
 columns = 3
 
 [node name="ProgressBar" parent="." unique_id=944270153 instance=ExtResource("4_progress_bar")]
+offset_left = 300.0
+offset_top = 653.0
+offset_right = 880.0
+offset_bottom = 683.0
