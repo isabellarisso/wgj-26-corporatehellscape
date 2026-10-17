@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://qd7bsg6m26r0"]
 
-[ext_resource type="Script" uid="uid://dnygtnmqa71yl" path="res://scenes/minigame_1_tab_closer.gd" id="1_j507y"]
+[ext_resource type="Script" uid="uid://dnygtnmqa71yl" path="res://scripts/minigame_1_tab_closer.gd" id="1_j507y"]
 
 [node name="Minigame1TabCloser" type="Node2D" unique_id=1366678929]
 script = ExtResource("1_j507y")
