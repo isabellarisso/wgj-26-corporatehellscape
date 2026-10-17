@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://uoxvfkslkg51"]
+
+[ext_resource type="Texture2D" uid="uid://0pnn6clid3vf" path="res://resources/tab.png" id="1_aarg8"]
+[ext_resource type="Script" uid="uid://daiy2d4eb13b7" path="res://scripts/closeTab.gd" id="2_fcdct"]
+[ext_resource type="Texture2D" uid="uid://b5eg8dj7fd6g3" path="res://resources/cross.png" id="3_txrey"]
+
+[node name="Tab" type="Node2D" unique_id=1956220245]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1634346854]
+position = Vector2(60.5, 15.5)
+scale = Vector2(1.45, 1.4999999)
+texture = ExtResource("1_aarg8")
+script = ExtResource("2_fcdct")
+
+[node name="Button" type="Button" parent="Sprite2D" unique_id=1599915213]
+visibility_layer = 0
+offset_left = 14.827585
+offset_top = -8.999998
+offset_right = 32.827583
+offset_bottom = 9.000002
+offset_transform_enabled = true
+icon = ExtResource("3_txrey")
+
+[connection signal="pressed" from="Sprite2D/Button" to="Sprite2D" method="_on_button_pressed"]
