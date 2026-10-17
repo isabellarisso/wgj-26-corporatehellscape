@@ -1,6 +1,24 @@
 [gd_scene format=3 uid="uid://ddvwox3clocxn"]
 
 [ext_resource type="Script" uid="uid://bgxqfiddobet2" path="res://scripts/mainScene.gd" id="1_w2twt"]
+[ext_resource type="PackedScene" uid="uid://qd7bsg6m26r0" path="res://scenes/minigame1_tabCloser.tscn" id="2_minigame"]
+[ext_resource type="Texture2D" uid="uid://6ip1tvldcynb" path="res://resources/memphisbackground.png" id="3_background"]
+[ext_resource type="PackedScene" uid="uid://waylvfl2synd" path="res://scenes/progress_bar.tscn" id="4_progress_bar"]
 
 [node name="Node2D" type="Node2D" unique_id=950236339]
 script = ExtResource("1_w2twt")
+minigame_scenes = Array[PackedScene]([ExtResource("2_minigame")])
+
+[node name="Background" type="Sprite2D" parent="." unique_id=465001132]
+position = Vector2(638, 654)
+scale = Vector2(1.8666667, 1.8666667)
+texture = ExtResource("3_background")
+
+[node name="MinigameGrid" type="GridContainer" parent="." unique_id=2078739437]
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 1216.0
+offset_bottom = 656.0
+columns = 3
+
+[node name="ProgressBar" parent="." unique_id=944270153 instance=ExtResource("4_progress_bar")]

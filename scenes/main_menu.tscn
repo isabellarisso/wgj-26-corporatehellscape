@@ -38,6 +38,10 @@ offset_bottom = 573.0
 theme_override_font_sizes/font_size = 30
 text = "Quit Game"
 
+[node name="TextureRect" type="TextureRect" parent="." unique_id=290283138]
+offset_right = 40.0
+offset_bottom = 40.0
+
 [connection signal="pressed" from="buttonManager/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="buttonManager/Options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="buttonManager/Quit" to="." method="_on_quit_pressed"]
